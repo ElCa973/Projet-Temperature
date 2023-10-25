@@ -106,7 +106,7 @@ elif page == pages [1]:
     elif option == "Nb de doublons":
         st.write("Nb de doublons :", df.duplicated().sum())
     
-    st.write("Après avoir étudié le dataframedu GitHub, nous avons décidé de supprimer les colonnes ayant plus de '30%' des valeurs manquantes, ainsi que les lignes avant l'année 1850.")
+    st.write("Après avoir étudié le dataframe du GitHub, nous avons décidé de supprimer les colonnes ayant plus de '30%' des valeurs manquantes, ainsi que les lignes avant l'année 1850.")
     
 
     df['year'] = df['year'].astype(int)
