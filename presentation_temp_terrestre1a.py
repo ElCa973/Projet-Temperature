@@ -35,11 +35,17 @@ df_nasa=pd.read_csv('ZonAnn_Ts_dSST.csv',  parse_dates=['Year'])
 
 # Sommaire
 st.sidebar.title("Sommaire")
-pages = ["Contexte du projet", "Exploration des données", "Analyse des données", "Modélisation", "Séries Temporelles", "Conclusion"]
+pages = ["Page de garde", "Contexte du projet", "Exploration des données", "Analyse des données", "Modélisation", "Séries Temporelles", "Conclusion"]
 page = st.sidebar.radio("Sélectionnez une page : ", pages)
 
 # Pages
 if page == pages [0]:
+    # Contenu de la première page
+    st.markdown("<h1 style='color: white;'>Page de garde</h1>", unsafe_allow_html=True)
+    #st.title("Page de garde")
+    st.image("Page de garde présentation.png")
+
+elif page == pages [1]:
     # Contenu de la première page
     st.title("TEMPERATURE TERRESTRE")
 
@@ -54,7 +60,7 @@ if page == pages [0]:
     st.write("- Une base de données de l'analyse de la température terrestre de la NASA - https://data.giss.nasa.gov/gistemp/")
     st.image('climate-change-1908381_1280.png')
 
-elif page == pages [1]:
+elif page == pages [2]:
     # Contenu de la deuxième page
     st.title("Exploration et préparation des données")
 
@@ -177,7 +183,7 @@ elif page == pages [1]:
 
     
     
-elif page == pages [2]:
+elif page == pages [3]:
     # Contenu de la troisième page
     st.title("Analyse des données")
     st.write("Dans cette partie de notre présentation nous montrerons les analyses statistiques effectué sur nos variables explicatives et sur la variable cible")
@@ -234,7 +240,7 @@ elif page == pages [2]:
     
 
 
-elif page == pages [3]:
+elif page == pages [4]:
     # Contenu de la quatrième page
     st.title("Modélisation")
     st.write("Modélisation avec données réduites et optimisées.")
@@ -306,7 +312,7 @@ elif page == pages [3]:
 
 
     
-elif page == pages [4]:
+elif page == pages [5]:
     # Contenu de la quatrième page
     st.title("Séries Temporelles")
     st.write("Dans le cadre de notre projet nous avons été amenés à étudier un module complémentaire qui n'était pas inclus dans notre programme.")
@@ -407,7 +413,7 @@ elif page == pages [4]:
         world_df_TS_pred = pd.concat([world_df_TS, pred])
         st.line_chart(world_df_TS_pred)
 
-elif page == pages[5]:
+elif page == pages[6]:
     # Contenu de la cinquième page
     st.title("CONCLUSION")
     st.write("•	En conclusion, notre analyse confirme le consensus scientifique écrasant selon lequel le changement climatique est réel, largement provoqué par les activités humaines et qu'il pose des défis importants à notre planète.") 
