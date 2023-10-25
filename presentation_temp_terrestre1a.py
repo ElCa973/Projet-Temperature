@@ -216,7 +216,8 @@ elif page == pages [3]:
     st.pyplot(fig2)
     
     st.write("Nous observons que la normalité n'est pas vérifiée pour nos variables explicatives non plus. Par la suit le test de SHAPIRO a confirmé que la plupart des variables ne suivent pas la distribution normale, sauf 3 variables explicatives.") 
-    st.write("le TEST de SPEARMAN peut être appliqué pour étudier de la nature des corrélations entres les variables, car pour ce type de test les données n'ont pas besoin d'être normalement distribuées.")   
+    st.write("\n")
+    st.write("le TEST de SPEARMAN peut être appliqué pour étudier la nature des corrélations entres les variables, car pour ce type de test les données n'ont pas besoin d'être normalement distribuées.")   
    
     features_stat_descp_no_share =['population', 'cumulative_luc_co2', 'land_use_change_co2',
        'land_use_change_co2_per_capita', 'temperature_change_from_ch4', 'temperature_change_from_co2',
