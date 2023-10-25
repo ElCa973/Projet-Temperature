@@ -3,7 +3,7 @@ seaborn
 matplotlib
 streamlit
 missingno
-sklearn
+scikit-learn
 joblib
 scipy
 statsmodels
